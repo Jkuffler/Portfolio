@@ -2,29 +2,28 @@ const today = new Date()
 const thisYear = today.getFullYear()
 const footer = document.querySelector("footer")
 const copyright = document.createElement("p")
+
 copyright.innerHTML =
   "Jason Küffler " + "© " + thisYear + "" + "<a href=#top> Top </a>"
 footer.appendChild(copyright)
 
 const profilePic = document.getElementById("git_profile")
-const img = document.createElement("img")
 
 fetch("https://api.github.com/users/JKuffler")
   .then(r => r.json())
   .then(data => {
-    let photo = data.avatar_url
-    const projectSection = document.getElementById("projects")
-    const projectsList = projectSection.querySelector("ul")
+    profilePic.src = data.avatar_url
+    // const projectSection = document.getElementById("projects")
+    // const projectsList = projectSection.querySelector("ul")
 
-    profilePic.appendChild(photo)
-
-    for (let i = 0; i < repos.length; i++) {
+    document.getElementById("profile_pic").appendChild(profilePic)
+    for (let i = 0; i < 3; i++) {
       const project = document.createElement("li")
       project.innerHTML =
-        `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` +
-        `  ${repos[i].name}  `.toString().slice(0, 22) +
+        `<a href=${data[i].html_url} target='_blank' rel="noopener noreferrer">` +
+        `  ${data[i].name}  `.toString().slice(0, 22) +
         `|Created| ` +
-        new Date(`${repos[i].created_at}`).toDateString() +
+        new Date(`${data[i].created_at}`).toDateString().getFullYear() +
         `</a>`
       projectsList.appendChild(project)
     }
