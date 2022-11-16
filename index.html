@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jason Küffler</title>
+    <title>J. Küffler</title>
 
+    <!-- ==== STYLE.CSS ==== -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- ====  REMIXICON CDN ==== -->
+    <!-- ==== ANIMATE CSS CDN  ==== -->
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
-    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="container header">
+  <body class="animate__animated animate__rubberBand animate__repeat-1">
+    <!-- ==== HEADER ==== -->
+    <header class="container header" id="top">
       <nav class="nav">
-        <div class="logo">
-          <h2>Jason C. Kuffler </h2>
+        <div>
+          <h2 class="animate animated animate__hinge animate_repeat-100">J. Küffler | 1983™ </h2>
         </div>
 
         <div class="nav_menu" id="nav_menu">
@@ -31,13 +30,15 @@
 
           <ul class="nav_menu_list">
             <li class="nav_menu_item">
-              <a href="assets/resume.pdf" download="JKufflerResume" class="nav_menu_link">download resume</a>
+              <a href="assets/resume.pdf" class="nav_menu_link"
+                >resume download</a
+              >
             </li>
             <li class="nav_menu_item">
-              <a href="#about" class="nav_menu_link">bio</a>
+              <a href="#about" class="nav_menu_link">about me</a>
             </li>
             <li class="nav_menu_item">
-              <a href="#projects" class="nav_menu_link">projects</a>
+              <a href="#projects" class="nav_menu_link">featured works</a>
             </li>
             <li class="nav_menu_item">
               <a href="#contact" class="nav_menu_link">contact</a>
@@ -56,20 +57,42 @@
         <div class="grid-cols-2">
           <div class="grid-item-1">
             <h1 class="main-heading">
-           Family | Code | Cats
+              Codin'
+              <br />
+              by the bay
             </h1>
-            <p class="info-text">
-              By the bay
-            </p>
-            </div>
+            <p class="info-text">Energetic | Mindful | Pragmatic | Studious</p>
+            <p class="info-text">Born CO - Raised MD</p>
           </div>
           <div class="grid-item-2">
-            <div class="img_wrapper">
-              <img src="assets/selby.jpg" alt="Selby Beach"/>
+            <div class="img_wrapper" id="profile_pic">
+              <img id="git_profile"/>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="about" class="wrapper">
+      <h1 class="main-heading">bio</h1>
+      <ul>
+        <li>
+          ⏳ Mentor @
+          <a href="https://codethedream.org/ctd-volunteer-mentors/">
+            Code The Dream - Bestla</a
+          >
+        </li>
+        <li>Technologist --> Bootcamper --> Cook Systems Fast Track</li>
+        <li>
+          ⌛ Previous Roles: Barista & Field Esspresso-Tech 15 years | Auto
+          Sales/Leasing Consultant 3.5 years
+        </li>
+      </ul>
+    </section>
+
+    <section class="wrapper" id='projects'>
+      <h1>projects</h1>
+      <ul></ul>
     </section>
 
     <section class="wrapper">
@@ -126,29 +149,34 @@
 
           <div class="grid-col-item">
             <div class="icon">
-              <!--use JS to insert github bio pic -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
             </div>
             <div class="featured_info">
-              
+              <span>Documentation for everything</span>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
                 nostrum voluptate totam ipsa corrupti vero!
               </p>
-              <div class="grid-col-item">
-                <div class="featured_info">
-                  Est 1983™
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-    
-    </footer>
-  
+    <footer></footer>
+
     <!-- ==== ANIMATE ON SCROLL JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- ==== GSAP CDN ==== -->

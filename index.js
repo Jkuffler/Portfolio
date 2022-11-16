@@ -17,17 +17,23 @@ fetch("https://api.github.com/users/JKuffler")
     // const projectsList = projectSection.querySelector("ul")
 
     document.getElementById("profile_pic").appendChild(profilePic)
+  })
+
+  fetch("")
+  .then()
+  .then(repos => {
     for (let i = 0; i < 3; i++) {
-      const project = document.createElement("li")
-      project.innerHTML =
-        `<a href=${data[i].html_url} target='_blank' rel="noopener noreferrer">` +
-        `  ${data[i].name}  `.toString().slice(0, 22) +
+      const repo = document.createElement("li")
+      repo.innerHTML =
+        `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` +
+        `  ${repos[i].name}  `.toString().slice(0, 22) +
         `|Created| ` +
-        new Date(`${data[i].created_at}`).toDateString().getFullYear() +
+        new Date(`${repos[i].created_at}`).toDateString().getFullYear() +
         `</a>`
       projectsList.appendChild(project)
     }
   })
+  .catch()
 
 const navId = document.getElementById("nav_menu"),
   ToggleBtnId = document.getElementById("toggle_btn"),
