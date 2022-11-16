@@ -21,7 +21,12 @@ fetch("https://api.github.com/users/JKuffler")
     profilePic.src = data.avatar_url
     gitBio.innerText = data.bio
     document.getElementById("profile_pic").appendChild(profilePic)
-    data.hireable ? (hireable.innerHTML = `Hireable: 🙋‍♂️ `) : hireable.innerHTML = `Hireable: ⛔`
+    data.hireable === null
+      ? (hireable.innerHTML = `Hireable: 🙋‍♂️ `)
+      : (hireable.innerHTML = `Hireable: 🙋‍♂️`)
+    data.hireable
+      ? (hireable.innerHTML = `Hireable: 🙋‍♂️ `)
+      : (hireable.innerHTML = `Hireable: ⛔`)
   })
 
 fetch("https://api.github.com/users/JKuffler/repos")
