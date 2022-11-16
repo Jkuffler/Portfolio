@@ -1,11 +1,11 @@
 /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Syne+Mono");
 /* ==== ROOT RESET ==== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Syne Mono", sans-serif;
 }
 *,
 *::before,
@@ -15,11 +15,11 @@
 
 /* ==== CSS VARIABLES ==== */
 :root {
-  --primary-color: #335eea;
-  --link-color: #506690;
-  --btn-hover-color: #2b50c7;
-  --lg-heading: #161c2d;
-  --text-content: #869ab8;
+  --primary-color: #6fa9ff;
+  --link-color: #005dba;
+  --btn-hover-color: #cf8506;
+  --lg-heading: #000000;
+  --text-content: #0a0a0a;
   --fixed-header-height: 4.5rem;
 }
 
@@ -28,19 +28,18 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background-color: #fafbfb;
+    background-image: url(assets/chesapeake-bay-bridge-md-2500.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 ul li {
   list-style-type: none;
 }
-a {
+a{
   text-decoration: none;
 }
-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
+a:hover {
+  box-shadow: #6b85d8;
 }
 /* ==== CONTAINER ==== */
 .container {
@@ -66,6 +65,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+
 /* ==== LOGO ==== */
 .logo h2 {
   font-size: 28px;
@@ -133,7 +133,7 @@ button {
   margin-top: 1.5rem;
   font-size: 19px;
   line-height: 28px;
-  color: #334157;
+  color: #000000;
 }
 .grid-item-2 {
   width: 100%;
@@ -191,9 +191,9 @@ button {
 }
 footer {
   width: 100%;
-  background-color: var(--primary-color);
-  height: 12px;
+  height: 32px;
   margin-top: 8rem;
+  text-align: center;
 }
 
 /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
@@ -217,7 +217,7 @@ footer {
     display: block;
     top: 2.5%;
     right: -100%;
-    background-color: #fff;
+    background-color: rgb(26, 5, 75);
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
@@ -234,16 +234,6 @@ footer {
   }
   .nav_menu_item .nav_menu_link {
     font-size: 18px;
-  }
-  .close_btn {
-    display: block;
-    position: absolute;
-    right: 10%;
-    font-size: 25px;
-    color: #50689e;
-  }
-  .close_btn:hover {
-    color: #000;
   }
   .wrapper {
     padding: 0 0.7rem;
