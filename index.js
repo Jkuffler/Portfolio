@@ -11,6 +11,12 @@ copyright.innerHTML =
   "Jason Küffler " + "© " + thisYear + "" + "<a href=#top> Top </a>"
 footer.appendChild(copyright)
 
+const linkBadge = document.getElementById("link_badge")
+
+linkBadge.innerHTML = `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jason-kuffler" data-version="v1">
+<a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jason-kuffler?trk=profile-badge"></a>
+</div>`
+
 const profilePic = document.getElementById("git_profile")
 const gitBio = document.getElementById("git_bio")
 const hireable = document.getElementById("hireable")
@@ -36,7 +42,7 @@ fetch("https://api.github.com/users/JKuffler/repos")
     const projectsList = projectSection.querySelector("ul")
 
     const sortedRepos = repos.sort((a, b) => b.id - a.id)
-    console.log(sortedRepos)
+    // console.log(sortedRepos)
     for (let i = 0; i < 10; i++) {
       const repos = document.createElement("li")
       repos.innerHTML =
