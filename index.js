@@ -3,6 +3,10 @@ const thisYear = today.getFullYear()
 const footer = document.querySelector("footer")
 const copyright = document.createElement("p")
 
+const navId = document.getElementById("nav_menu"),
+  ToggleBtnId = document.getElementById("toggle_btn"),
+  CloseBtnId = document.getElementById("close_btn")
+
 copyright.innerHTML =
   "Jason Küffler " + "© " + thisYear + "" + "<a href=#top> Top </a>"
 footer.appendChild(copyright)
@@ -13,31 +17,28 @@ fetch("https://api.github.com/users/JKuffler")
   .then(r => r.json())
   .then(data => {
     profilePic.src = data.avatar_url
-    // const projectSection = document.getElementById("projects")
-    // const projectsList = projectSection.querySelector("ul")
-
     document.getElementById("profile_pic").appendChild(profilePic)
   })
 
-  fetch("")
-  .then()
+fetch("https://api.github.com/users/JKuffler/repos")
+  .then(r => r.json())
   .then(repos => {
-    for (let i = 0; i < 3; i++) {
-      const repo = document.createElement("li")
-      repo.innerHTML =
-        `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` +
-        `  ${repos[i].name}  `.toString().slice(0, 22) +
+    const projectSection = document.getElementById("projects")
+    const projectsList = projectSection.querySelector("ul")
+
+    const sortedRepos = repos.sort((a, b) => b.id - a.id)
+    console.log(sortedRepos)
+    for (let i = 0; i < 10; i++) {
+      const project = document.createElement("li")
+      project.innerHTML =
+        `<a href=${sortedRepos[i].html_url} target='_blank' rel="noopener noreferrer">` +
+        `  ${sortedRepos[i].name}  `.toString().slice(0, 22) +
         `|Created| ` +
-        new Date(`${repos[i].created_at}`).toDateString().getFullYear() +
+        new Date(`${sortedRepos[i].created_at}`).toDateString() +
         `</a>`
       projectsList.appendChild(project)
     }
   })
-  .catch()
-
-const navId = document.getElementById("nav_menu"),
-  ToggleBtnId = document.getElementById("toggle_btn"),
-  CloseBtnId = document.getElementById("close_btn")
 
 // ==== SHOW MENU ==== //
 ToggleBtnId.addEventListener("click", () => {
