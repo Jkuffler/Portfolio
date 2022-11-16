@@ -12,12 +12,16 @@ copyright.innerHTML =
 footer.appendChild(copyright)
 
 const profilePic = document.getElementById("git_profile")
+const gitBio = document.getElementById("git_bio")
+const hireable = document.getElementById("hireable")
 
 fetch("https://api.github.com/users/JKuffler")
   .then(r => r.json())
   .then(data => {
     profilePic.src = data.avatar_url
+    gitBio.innerText = data.bio
     document.getElementById("profile_pic").appendChild(profilePic)
+    data.hireable ? (hireable.innerHTML = `Hireable: 🙋‍♂️ `) : hireable.innerHTML = `Hireable: ⛔`
   })
 
 fetch("https://api.github.com/users/JKuffler/repos")
@@ -29,14 +33,14 @@ fetch("https://api.github.com/users/JKuffler/repos")
     const sortedRepos = repos.sort((a, b) => b.id - a.id)
     console.log(sortedRepos)
     for (let i = 0; i < 10; i++) {
-      const project = document.createElement("li")
-      project.innerHTML =
+      const repos = document.createElement("li")
+      repos.innerHTML =
         `<a href=${sortedRepos[i].html_url} target='_blank' rel="noopener noreferrer">` +
         `  ${sortedRepos[i].name}  `.toString().slice(0, 22) +
         `|Created| ` +
         new Date(`${sortedRepos[i].created_at}`).toDateString() +
         `</a>`
-      projectsList.appendChild(project)
+      projectsList.appendChild(repos)
     }
   })
 

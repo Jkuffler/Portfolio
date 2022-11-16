@@ -21,8 +21,8 @@ Students will create their own portfolio page/site and prepare a presentation in
 - [ ] Github API specific data - Object structure below
 - [ ] ----------------------------
 - [ x] Profile picture present, pulled from Github via Github's API
-- [ ] Bio underneath profile picture, pulled from Github via Github's API
-- [ ] Hire-able status displayed, pulled from Github via Github's API
+- [ x] Bio underneath profile picture, pulled from Github via Github's API
+- [ x] Hire-able status displayed, pulled from Github via Github's API
 
 
 ## Wireframe
