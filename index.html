@@ -1,178 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>J. Küffler</title>
 
-    <!-- ==== STYLE.CSS ==== -->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J. Küffler</title>
 
-    <!-- ==== ANIMATE CSS CDN  ==== -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
-  <body class="animate__animated animate__rubberBand animate__repeat-1">
-    
-    <!-- ==== HEADER ==== -->
-    <header class="container header" id="top"> 
-      <nav class="nav">
-        <div>
-          <h2 class="animate animated animate__hinge animate_repeat-100">
-            J. Küffler™ Est.1983
-          </h2>
+  <!-- ==== STYLE.CSS ==== -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ==== ANIMATE CSS CDN  ==== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="animate__animated animate__rubberBand animate__repeat-1">
+
+  <!-- ==== HEADER ==== -->
+  <header class="container header" id="top">
+    <nav class="nav">
+    <h2 class="animate animated animate__hinge animate_repeat-100">J. Küffler™ Est.1983</h2>
+      <div class="nav_menu" id="nav_menu">
+        <button class="close_btn" id="close_btn">X</button>
+
+        <ul class="nav_menu_list">
+          <li class="nav_menu_item">
+            <a href="assets/resume.pdf" class="nav_menu_link">resumé download</a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#about" class="nav_menu_link">about</a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#projects" class="nav_menu_link">featured work</a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#contact" class="nav_menu_link">social</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="toggle_btn" id="toggle_btn" name="menu">...</button>
+    </nav>
+  </header>
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="grid-cols-2">
+        <div class="grid-item-1">
+          <h1 class="main-heading">
+            Codin'
+            <br />
+            by The Bay
+          </h1>
+          <p class="info-text" id="git_bio"></p>
+          <p class="info-text">Born CO - Raised MD</p>
+          <p class="info-text" id="hireable"></p>
         </div>
-
-        <div class="nav_menu" id="nav_menu">
-          <button class="close_btn" id="close_btn">X</button>
-
-          <ul class="nav_menu_list">
-            <li class="nav_menu_item">
-              <a href="assets/resume.pdf" class="nav_menu_link"
-                >resumé download</a
-              >
-            </li>
-            <li class="nav_menu_item">
-              <a href="#about" class="nav_menu_link">about</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#projects" class="nav_menu_link">featured work</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#contact" class="nav_menu_link">social</a>
-            </li>
-          </ul>
-        </div>
-
-        <button class="toggle_btn" id="toggle_btn" name="menu">...</button>
-      </nav>
-    </header>
-
-    <section class="wrapper">
-      <div class="container">
-        <div class="grid-cols-2">
-          <div class="grid-item-1">
-            <h1 class="main-heading">
-              Codin'
-              <br />
-              by The Bay
-            </h1>
-            <p class="info-text" id="git_bio"></p>
-            <p class="info-text">Born CO - Raised MD</p>
-            <p class="info-text" id="hireable"></p>
-          </div>
-          <div class="grid-item-2">
-            <div class="img_wrapper" id="profile_pic">
-              <img id="git_profile" />
-            </div>
+        <div class="grid-item-2">
+          <div class="img_wrapper" id="profile_pic">
+            <img id="git_profile" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about" class="wrapper">
-      <h1 class="main-heading">about</h1>
-      <ul>
-        <li>Technologist --> Bootcamper --> Cook Systems Fast Track</li>
-        <li>
-          Currently Mentor @
-          <a href="https://codethedream.org/ctd-volunteer-mentors/">
-            codethedream.org</a
-          >
-        </li>
-        <li>
-          Previous Roles: Barista & Field Esspresso-Tech 15 years | Auto
-          Sales/Leasing Consultant 3.5 years
-        </li>
-      </ul>
-    </section>
+  <section id="about" class="wrapper">
+    <h1 class="main-heading">about</h1>
+    <ul>
+      <li>Technologist --> Bootcamper --> Cook Systems Fast Track</li>
+      <li>
+        Currently Mentor @
+        <a href="https://codethedream.org/ctd-volunteer-mentors/">
+          codethedream.org</a>
+      </li>
+      <li>
+        Previous Roles: Barista & Field Esspresso-Tech 15 years | Auto
+        Sales/Leasing Consultant 3.5 years
+      </li>
+    </ul>
+  </section>
 
-    <section class="wrapper" id="projects">
-      <h1>projects</h1>
-      <ul></ul>
-    </section>
+  <section class="wrapper" id="projects">
+    <h1>projects</h1>
+    <ul></ul>
+  </section>
 
-    <section class="wrapper">
-      <div class="container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="grid-cols-3">
-          <div class="grid-col-item">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-
-            <div class="featured_info">
-              <div id="contact">connect</div>
-                <ul>
-                  <li id="link_badge"></li>
-                </ul>
-            </div>
+  <section class="wrapper">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <div class="grid-cols-3">
+        <div class="grid-col-item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
           </div>
-          <div class="grid-col-item">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <div class="featured_info">
-              <span>"The fool wonders, the wise man asks"<i> (sic)</i> </span>
-              <p> Benjamin Disraeli</p>
-            </div>
+
+          <div class="featured_info">
+            <div id="contact">connect</div>
+            <ul>
+              <li id="link_badge"></li>
+            </ul>
           </div>
+        </div>
+        <div class="grid-col-item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div class="featured_info">
+            <span>"The fool wonders, the wise man asks"<i> (sic)</i> </span>
+            <p> Benjamin Disraeli</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
-    <footer>          
-      <div class="grid-col-item">
+  <footer>
+    <div class="grid-col-item">
       <div class="icon" style="text-align: center;">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       </div>
-    </footer>
+  </footer>
 
-    <!-- ==== ANIMATE ON SCROLL JS CDN -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- ==== GSAP CDN ==== -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script> -->
-    <!-- ==== SCRIPT.JS ==== -->
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <script src="index.js" defer></script>
-  </body>
+  <!-- ==== ANIMATE ON SCROLL JS CDN -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- ==== GSAP CDN ==== -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script> -->
+  <!-- ==== SCRIPT.JS ==== -->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <script src="index.js" defer></script>
+</body>
+
 </html>
