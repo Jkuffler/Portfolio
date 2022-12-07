@@ -1,18 +1,18 @@
-  /** Mobile toggle menu */
-  const navId = document.getElementById("nav_menu"),
+/** Mobile toggle menu */
+const navId = document.getElementById("nav_menu"),
   ToggleBtnId = document.getElementById("toggle_btn"),
   CloseBtnId = document.getElementById("close_btn")
-  
-  // ==== SHOW MENU ==== //
-  ToggleBtnId.addEventListener("click", () => {
+
+// ==== SHOW MENU ==== //
+ToggleBtnId.addEventListener("click", () => {
   navId.classList.add("show")
-  })
-  
-  // ==== HIDE MENU ==== //
-  CloseBtnId.addEventListener("click", () => {
+})
+
+// ==== HIDE MENU ==== //
+CloseBtnId.addEventListener("click", () => {
   navId.classList.remove("show")
-  })
-  
+})
+
 /**github avatar and bio */
 const profilePic = document.getElementById("git_profile")
 const gitBio = document.getElementById("git_bio")
@@ -53,7 +53,7 @@ fetch("https://api.github.com/users/JKuffler")
 //     }
 //   })
 
-  /** LINKDin */
+/** LINKDin */
 const linkBadge = document.getElementById("link_badge")
 
 linkBadge.innerHTML = `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jason-kuffler" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jason-kuffler?trk=profile-badge"> Jason Kuffler </a></div>
@@ -67,5 +67,3 @@ const copyright = document.createElement("p")
 copyright.innerHTML =
   "Jason Küffler " + "© " + thisYear + "" + "<a href=#top> Top </a>"
 footer.appendChild(copyright)
-
-

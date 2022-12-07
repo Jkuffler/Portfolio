@@ -103,7 +103,7 @@ ul li {
   display: block;
   font-size: auto;
   font-weight: 300;
-  border-radius:1em ;
+  border-radius: 1em;
   color: var(--lg-heading);
   z-index: 4;
 }
