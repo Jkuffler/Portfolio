@@ -18,25 +18,26 @@ fetch("https://api.github.com/users/JKuffler")
   })
 
 /* PROJECT SECTION  */
-fetch("https://api.github.com/users/JKuffler/repos")
-  .then(r => r.json())
-  .then(repos => {
-    const projectSection = document.getElementById("projects")
-    const projectsList = projectSection.querySelector("ul")
+// fetch("https://api.github.com/users/JKuffler/repos")
+//   .then(r => r.json())
+//   .then(repos => {
+//     const projectSection = document.getElementById("projects")
+//     const projectsList = projectSection.querySelector("ul")
 
-    const sortedRepos = repos.sort((a, z) => z.id - a.id)
-    // console.log(sortedRepos)
-    for (let i = 0; i < 10; i++) {
-      const repos = document.createElement("li")
-      repos.innerHTML =
-        `<a href=${sortedRepos[i].html_url} target='_blank' rel="noopener noreferrer">` +
-        `  ${sortedRepos[i].name}  `.toString().slice(0, 22) +
-        `|Created| ` +
-        new Date(`${sortedRepos[i].created_at}`).toDateString() +
-        `</a>`
-      projectsList.appendChild(repos)
-    }
-  })
+//     const sortedRepos = repos.sort((a, z) => z.id - a.id)
+//     // console.log(sortedRepos)
+//     for (let i = 0; i < 10; i++) {
+//       const repos = document.createElement("li")
+//       repos.innerHTML =
+//         `<a href=${sortedRepos[i].html_url} target='_blank' rel="noopener noreferrer">` +
+//         `  ${sortedRepos[i].name}  `.toString().slice(0, 22) +
+//         `|Created| ` +
+//         new Date(`${sortedRepos[i].created_at}`).toDateString() +
+//         `</a>`
+//       projectsList.appendChild(repos)
+//     }
+//   })
+
   /** LINKDin */
 const linkBadge = document.getElementById("link_badge")
 
