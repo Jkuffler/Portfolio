@@ -220,7 +220,7 @@ footer {
     display: block;
     top: 2.5%;
     right: -100%;
-    background-color: rgb(26, 5, 75);
+    background-color: rgba(95, 185, 203, 0.872);
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
