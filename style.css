@@ -93,14 +93,19 @@ ul li {
   color: var(--primary-color);
 }
 .toggle_btn {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 300;
   color: var(--lg-heading);
   z-index: 4;
 }
 .nav_menu,
 .close_btn {
-  display: none;
+  display: block;
+  font-size: auto;
+  font-weight: 300;
+  border-radius: 1em;
+  color: var(--lg-heading);
+  z-index: 4;
 }
 .show {
   right: 3% !important;
@@ -204,6 +209,9 @@ footer {
   .toggle_btn {
     display: none;
   }
+  .close_btn {
+    display: none;
+  }
   .nav_menu {
     display: block;
   }
@@ -220,7 +228,7 @@ footer {
     display: block;
     top: 2.5%;
     right: -100%;
-    background-color: rgb(26, 5, 75);
+    background-color: rgba(95, 185, 203, 0.872);
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
