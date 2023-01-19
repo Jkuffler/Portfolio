@@ -45,6 +45,11 @@ img {
 ul li {
   list-style-type: none;
 }
+
+#icons {
+  font-size: 4em;
+}
+
 /* ==== CONTAINER ==== */
 .container {
   width: 100%;
@@ -59,6 +64,7 @@ ul li {
 .header {
   height: var(--fixed-header-height);
   padding: 0 1.7rem;
+  position: sticky;
 }
 
 /* ==== NAV ==== */
