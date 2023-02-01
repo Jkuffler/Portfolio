@@ -38,23 +38,49 @@ a:hover {
   box-shadow: #6b85d8;
 }
 
+iframe {
+  display: flex;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+h4 {
+  margin-bottom: .6em;
+}
+
 img {
   max-width: 15em;
   max-height: auto;
   border-radius: 1em;
+  margin: .5em;
 }
 
 ul li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  justify-content: space-between;
+  gap: .75em;
 }
 
 .tools {
   font-size: 24px;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
 #icons {
   font-size: 4em;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* ==== CONTAINER ==== */
@@ -87,11 +113,11 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1em;
 }
 .nav_menu_list .nav_menu_item {
   display: flex;
   margin: 0 2rem;
-  gap: 1em;
 }
 .nav_menu_item .nav_menu_link {
   font-size: 16.5px;
@@ -123,10 +149,10 @@ ul li {
 /* ====  WRAPPER ==== */
 .wrapper {
   width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1em;
-  margin-bottom: 1em;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-top: .75em;
+  margin-bottom: .75em;
 }
 
 .info-text {
