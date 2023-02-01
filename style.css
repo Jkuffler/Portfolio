@@ -50,6 +50,9 @@ ul li {
   list-style-type: none;
 }
 
+.tools {
+  font-size: 24px;
+}
 #icons {
   font-size: 4em;
 }
@@ -122,12 +125,12 @@ ul li {
   width: 100%;
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 5em;
-  margin-bottom: 5em;
+  padding-top: 1em;
+  margin-bottom: 1em;
 }
 
 .info-text {
-  margin-top: 1em;
+  margin-top: .5em;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
