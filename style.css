@@ -31,12 +31,18 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  margin-bottom: .75em;
+}
+
 a {
   text-decoration: none;
 }
+
 a:hover {
   box-shadow: #6b85d8;
 }
+
 
 iframe {
   display: flex;
@@ -65,15 +71,38 @@ ul li {
 
 .tools {
   font-size: 24px;
+  text-align: center;
+  margin-top: .75em;
+}
+
+.devicon-linkedin-plain-wordmark{
+  font-size: 5em;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  margin-bottom: .75em;
 }
 
 #icons {
+  display: flex;
+  flex-direction: row;
   font-size: 4em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .35em;
+  padding-top: .2em;
+}
+
+.icon {
+  font-size: 5em;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects {
@@ -148,11 +177,13 @@ ul li {
 }
 /* ====  WRAPPER ==== */
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding-left: .75em;
-  padding-right: .75em;
-  padding-top: .75em;
-  margin-bottom: .75em;
+  padding: 1em;
+  padding-top: 0.5em;
 }
 
 .info-text {
@@ -218,7 +249,7 @@ footer {
 
 @media screen and (max-width: 991px) {
   .wrapper {
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
 
   .info-text {
