@@ -32,12 +32,6 @@ fetch("https://api.github.com/users/JKuffler")
       : (hireable.innerHTML = `Hireable: ⛔`)
   })
 
-/** LINKDin */
-const linkBadge = document.getElementById("link_badge")
-
-linkBadge.innerHTML = `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jason-kuffler" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jason-kuffler?trk=profile-badge">LinkedIn</a></div>
-`
-
 const today = new Date()
 const thisYear = today.getFullYear()
 const footer = document.querySelector("footer")
